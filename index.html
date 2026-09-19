@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Gaijin Bot</title>
+
+    <!-- Fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ícones -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="icon" type="image/jpeg" href="imagens/gaijin_logo.png"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- Botão para abrir/fechar a sidebar -->
+    <button
+        class="sidebar-toggle"
+        id="sidebarToggle"
+        title="Mostrar menu"
+    >
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </button>
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Cabeçalho -->
+        <div class="sidebar-header">
+
+            <div class="bot-icon">
+
+                <img
+                    src="imagens/bot.jpeg"
+                    class="sidebar-bot-icon"
+                    alt="Gaijin Bot"
+                >
+
+            </div>
+
+            <div class="bot-info">
+
+                <h2>
+                    Gaijin Bot
+                </h2>
+
+                <p>
+                    Blyaaattt!!!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Nova conversa -->
+        <div class="new-conversation-container">
+
+            <button
+                class="new-chat-button"
+                id="newChatButton"
+            >
+
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+
+                <p>
+                    New Conversation
+                </p>
+
+            </button>
+
+        </div>
+
+
+        <!-- Histórico -->
+        <div class="history-container">
+
+            <div class="history-title">
+                Histórico
+            </div>
+
+            <nav
+                class="conversation-list"
+                id="conversationList"
+            >
+
+                <!--
+                    As conversas serão adicionadas
+                    automaticamente pelo JavaScript.
+                -->
+
+            </nav>
+
+        </div>
+
+
+        <!-- Seletor de tema -->
+        <div class="theme-container">
+
+            <div class="theme-switch">
+
+                <button
+                    class="theme-button light"
+                    id="lightModeButton"
+                    title="Modo claro"
+                >
+
+                    <span class="material-symbols-outlined">
+                        light_mode
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="theme-button dark active"
+                    id="darkModeButton"
+                    title="Modo escuro"
+                >
+
+                    <span class="material-symbols-outlined">
+                        dark_mode
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+         ===================================================== -->
+
+    <main class="main-content">
+
+        <section class="chat-area">
+
+
+            <!-- Área das mensagens -->
+            <div
+                class="messages"
+                id="messages"
+            >
+
+                <div
+                    class="welcome"
+                    id="welcome"
+                >
+
+                    <h1>
+                        Bem vindo a Gaijin Bot
+                    </h1>
+
+                    <p>
+                        Como posso te ajudar hoje?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Campo de mensagem -->
+            <div class="message-container">
+
+                <textarea
+                    class="message-input"
+                    id="messageInput"
+                    placeholder="Message Gaijin Bot..."
+                    rows="1"
+                ></textarea>
+
+
+                <button
+                    class="send-button"
+                    id="sendButton"
+                    title="Enviar mensagem"
+                >
+
+                    <span class="material-symbols-outlined">
+                        arrow_upward
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
